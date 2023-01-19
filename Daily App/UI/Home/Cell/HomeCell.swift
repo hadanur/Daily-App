@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 
 class HomeCell: UICollectionViewCell{
-    @IBOutlet weak var dailyImage: UIImageView!
-    @IBOutlet weak var dailyTitle: UILabel!
-    @IBOutlet weak var dailyDate: UILabel!
-    @IBOutlet weak var dailyVisual: UIVisualEffectView!
-    @IBOutlet weak var dailyView: UIView!
+    @IBOutlet private weak var dailyImage: UIImageView!
+    @IBOutlet private weak var dailyTitle: UILabel!
+    @IBOutlet private weak var dailyDate: UILabel!
+    @IBOutlet private weak var dailyVisual: UIVisualEffectView!
+    @IBOutlet private weak var dailyView: UIView!
     
     func configure(daily: DailyModel) {
         dailyImage.image = UIImage(data: daily.image)

@@ -79,7 +79,7 @@ class CreateCell: UITableViewCell{
         return formatter.string(from: date)
     }
     
-    @IBAction func saveButtonClicked(_ sender: Any) {
+    @IBAction private func saveButtonClicked(_ sender: Any) {
         guard let title = dailyTitle.text,
               let overview = dailyDescriptionView.text,
               let day = dailyDate.text,
@@ -97,13 +97,13 @@ class CreateCell: UITableViewCell{
         }
     }
     
-    @IBAction func cancelButtonClicked(_ sender: Any) {
+    @IBAction private func cancelButtonClicked(_ sender: Any) {
         delegate?.cancelButtonClicked()
     }
 }
 
 extension CreateCell: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-    @objc func selectDailyImage(){
+    @objc private func selectDailyImage(){
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .photoLibrary

@@ -8,10 +8,10 @@
 import UIKit
 
 class DetailsVC: UIViewController {
-    @IBOutlet weak var detailsImage: UIImageView!
-    @IBOutlet weak var detailsTitle: UILabel!
-    @IBOutlet weak var detailsDate: UILabel!
-    @IBOutlet weak var detailsDescription: UILabel!
+    @IBOutlet private weak var detailsImage: UIImageView!
+    @IBOutlet private weak var detailsTitle: UILabel!
+    @IBOutlet private weak var detailsDate: UILabel!
+    @IBOutlet private weak var detailsDescription: UILabel!
     
     private var daily: DailyModel!
     
@@ -25,6 +25,7 @@ class DetailsVC: UIViewController {
     }
 
     @IBAction func backButtonClicked(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
 }
 
