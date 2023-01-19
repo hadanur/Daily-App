@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsVC" customModule="Daily_App" customModuleProvider="target">
+            <connections>
+                <outlet property="detailsDate" destination="SYV-mv-hMy" id="mbu-GN-X0Q"/>
+                <outlet property="detailsDescription" destination="ij7-Y1-qhr" id="fH4-He-daj"/>
+                <outlet property="detailsImage" destination="rCi-fe-c1v" id="tQC-px-Oqn"/>
+                <outlet property="detailsTitle" destination="Bkp-ao-fCV" id="viX-1t-2aK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rCi-fe-c1v">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="263"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="263" id="bg1-S1-wZa"/>
+                        <constraint firstAttribute="width" constant="414" id="jOn-bV-OOT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkp-ao-fCV">
+                    <rect key="frame" x="40" y="303" width="111.5" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="QEs-p9-RGp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ij7-Y1-qhr">
+                    <rect key="frame" x="40" y="390" width="326" height="126"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="126" id="J4T-Po-d1r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYV-mv-hMy">
+                    <rect key="frame" x="337" y="303" width="37" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="sow-A9-CcT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQu-11-GiI">
+                    <rect key="frame" x="177" y="574" width="62" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Back">
+                        <color key="baseBackgroundColor" red="0.38103693179999998" green="0.18393875370000001" blue="0.32322647199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="backButtonClicked:" destination="-1" eventType="touchUpInside" id="ALz-cW-kuN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="SYV-mv-hMy" firstAttribute="top" secondItem="rCi-fe-c1v" secondAttribute="bottom" constant="40" id="4sY-F9-ash"/>
+                <constraint firstItem="Bkp-ao-fCV" firstAttribute="top" secondItem="rCi-fe-c1v" secondAttribute="bottom" constant="40" id="5Gw-Me-rAV"/>
+                <constraint firstItem="rCi-fe-c1v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5Qc-sb-Tnm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SYV-mv-hMy" secondAttribute="trailing" constant="40" id="CCI-N4-X5d"/>
+                <constraint firstItem="ij7-Y1-qhr" firstAttribute="top" secondItem="Bkp-ao-fCV" secondAttribute="bottom" constant="65" id="Ff4-be-Hk9"/>
+                <constraint firstItem="ij7-Y1-qhr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="JJk-Mb-WK3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ij7-Y1-qhr" secondAttribute="trailing" constant="48" id="MNg-jl-4Pp"/>
+                <constraint firstItem="ij7-Y1-qhr" firstAttribute="top" secondItem="SYV-mv-hMy" secondAttribute="bottom" constant="61" id="MZt-zB-WQc"/>
+                <constraint firstItem="Bkp-ao-fCV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="NA5-iD-dbO"/>
+                <constraint firstItem="rCi-fe-c1v" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-48" id="NaQ-NK-lZp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aQu-11-GiI" secondAttribute="trailing" constant="175" id="e0s-91-Yy1"/>
+                <constraint firstItem="aQu-11-GiI" firstAttribute="top" secondItem="ij7-Y1-qhr" secondAttribute="bottom" constant="58" id="e4P-m6-P87"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ij7-Y1-qhr" secondAttribute="bottom" constant="346" id="eCu-hy-hKN"/>
+                <constraint firstItem="aQu-11-GiI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="177" id="gt6-Fk-mMw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rCi-fe-c1v" secondAttribute="trailing" id="k4x-En-imq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aQu-11-GiI" secondAttribute="bottom" constant="253" id="rsI-4u-Z2f"/>
+            </constraints>
+            <point key="canvasLocation" x="115.94202898550725" y="19.419642857142858"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

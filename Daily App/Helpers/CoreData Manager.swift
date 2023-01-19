@@ -14,7 +14,7 @@ class CoreDataManager {
     
     private init() { }
     
-    func saveDaily(title: String, overview: String, day: String, image: Data) -> Bool {
+    func saveDaily(title: String, overview: String, day: String, image: UIImage) -> Bool {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
@@ -24,7 +24,10 @@ class CoreDataManager {
         newBody.setValue(overview, forKey: "overview")
         newBody.setValue(UUID(), forKey: "id")
         newBody.setValue(day, forKey: "day")
-        newBody.setValue(image, forKey: "image")
+        let imageData = image.jpegData(compressionQuality: 0.6)
+        
+        
+        newBody.setValue(imageData, forKey: "image")
 
         do {
             try context.save()

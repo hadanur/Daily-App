@@ -16,6 +16,9 @@ class HomeCell: UICollectionViewCell{
     @IBOutlet weak var dailyView: UIView!
     
     func configure(daily: DailyModel) {
+        dailyImage.image = UIImage(data: daily.image)
+        dailyTitle.text = daily.title
+        dailyDate.text = daily.day
         
     }
 }

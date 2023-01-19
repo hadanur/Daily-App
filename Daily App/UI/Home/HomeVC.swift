@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UIScrollView_InfiniteScroll
 
 class HomeVC: UIViewController {
     @IBOutlet private weak var collectionView: UICollectionView!
@@ -19,6 +20,7 @@ class HomeVC: UIViewController {
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        viewModel.getData()
         
         let homeCell = UINib(nibName: "HomeCell", bundle: nil)
         collectionView.register(homeCell, forCellWithReuseIdentifier: "homeCell")
@@ -26,6 +28,13 @@ class HomeVC: UIViewController {
         title = "Günlük"
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonClicked))
+        
+        collectionView.infiniteScrollDirection = .vertical
+        collectionView.addInfiniteScroll { tableView in
+            self.viewModel.getData()
+            self.collectionView.reloadData()
+            self.collectionView.finishInfiniteScroll()
+        }
     }
 
 }
@@ -54,4 +63,9 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         cell.configure(daily: data)
         return cell
     }
-}
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let data = viewModel.dailys[indexPath.row]
+        let detailsVC = DetailsVC.create(daily: data)
+        navigationController?.pushViewController(detailsVC, animated: true)
+    }
+    }
