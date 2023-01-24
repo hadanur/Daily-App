@@ -7,25 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B734C83229796590000B2AC3 /* CreateDailyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B734C83129796590000B2AC3 /* CreateDailyVM.swift */; };
+		B734C8342979670D000B2AC3 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B734C8332979670D000B2AC3 /* UIViewController + Extensions.swift */; };
+		B734C837297971A2000B2AC3 /* UIScrollView_InfiniteScroll in Frameworks */ = {isa = PBXBuildFile; productRef = B734C836297971A2000B2AC3 /* UIScrollView_InfiniteScroll */; };
+		B7DBC1612979B089005BA773 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DBC15F2979B089005BA773 /* DetailsVC.swift */; };
+		B7DBC1622979B089005BA773 /* DetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DBC1602979B089005BA773 /* DetailsVC.xib */; };
 		B7F338722976F94800E3A267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F338712976F94800E3A267 /* AppDelegate.swift */; };
 		B7F338742976F94800E3A267 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F338732976F94800E3A267 /* SceneDelegate.swift */; };
-		B7F338762976F94800E3A267 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F338752976F94800E3A267 /* ViewController.swift */; };
-		B7F338792976F94800E3A267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F338772976F94800E3A267 /* Main.storyboard */; };
 		B7F3387C2976F94800E3A267 /* Daily_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7F3387A2976F94800E3A267 /* Daily_App.xcdatamodeld */; };
 		B7F3387E2976F94900E3A267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F3387D2976F94900E3A267 /* Assets.xcassets */; };
 		B7F338812976F94900E3A267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F3387F2976F94900E3A267 /* LaunchScreen.storyboard */; };
+		B7F3388E2976F9CD00E3A267 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3388C2976F9CD00E3A267 /* HomeVC.swift */; };
+		B7F3388F2976F9CD00E3A267 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F3388D2976F9CD00E3A267 /* HomeVC.xib */; };
+		B7F338932976FBA000E3A267 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F338922976FBA000E3A267 /* HomeVM.swift */; };
+		B7F338962976FCA000E3A267 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F338952976FCA000E3A267 /* HomeCell.swift */; };
+		B7F338982976FCA800E3A267 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F338972976FCA800E3A267 /* HomeCell.xib */; };
+		B7F3389D29770AC000E3A267 /* CoreData Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3389C29770AC000E3A267 /* CoreData Manager.swift */; };
+		B7F3389F29770AD100E3A267 /* DailyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3389E29770AD100E3A267 /* DailyModel.swift */; };
+		B7F338A32977100C00E3A267 /* CreateDailyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F338A12977100C00E3A267 /* CreateDailyVC.swift */; };
+		B7F338A42977100C00E3A267 /* CreateDailyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F338A22977100C00E3A267 /* CreateDailyVC.xib */; };
+		B7F338A72977114A00E3A267 /* CreateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F338A62977114A00E3A267 /* CreateCell.swift */; };
+		B7F338A92977115100E3A267 /* CreateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F338A82977115100E3A267 /* CreateCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B734C83129796590000B2AC3 /* CreateDailyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDailyVM.swift; sourceTree = "<group>"; };
+		B734C8332979670D000B2AC3 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
+		B7DBC15F2979B089005BA773 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		B7DBC1602979B089005BA773 /* DetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsVC.xib; sourceTree = "<group>"; };
 		B7F3386E2976F94800E3A267 /* Daily App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F338712976F94800E3A267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7F338732976F94800E3A267 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7F338752976F94800E3A267 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B7F338782976F94800E3A267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7F3387B2976F94800E3A267 /* Daily_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Daily_App.xcdatamodel; sourceTree = "<group>"; };
 		B7F3387D2976F94900E3A267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7F338802976F94900E3A267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7F338822976F94900E3A267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F3388C2976F9CD00E3A267 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		B7F3388D2976F9CD00E3A267 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		B7F338922976FBA000E3A267 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		B7F338952976FCA000E3A267 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		B7F338972976FCA800E3A267 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		B7F3389C29770AC000E3A267 /* CoreData Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData Manager.swift"; sourceTree = "<group>"; };
+		B7F3389E29770AD100E3A267 /* DailyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyModel.swift; sourceTree = "<group>"; };
+		B7F338A12977100C00E3A267 /* CreateDailyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDailyVC.swift; sourceTree = "<group>"; };
+		B7F338A22977100C00E3A267 /* CreateDailyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateDailyVC.xib; sourceTree = "<group>"; };
+		B7F338A62977114A00E3A267 /* CreateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCell.swift; sourceTree = "<group>"; };
+		B7F338A82977115100E3A267 /* CreateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +60,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B734C837297971A2000B2AC3 /* UIScrollView_InfiniteScroll in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B7DBC15E2979B075005BA773 /* DeatilsVC */ = {
+			isa = PBXGroup;
+			children = (
+				B7DBC15F2979B089005BA773 /* DetailsVC.swift */,
+				B7DBC1602979B089005BA773 /* DetailsVC.xib */,
+			);
+			path = DeatilsVC;
+			sourceTree = "<group>";
+		};
 		B7F338652976F94800E3A267 = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +95,108 @@
 		B7F338702976F94800E3A267 /* Daily App */ = {
 			isa = PBXGroup;
 			children = (
+				B7F3389B2977097700E3A267 /* Helpers */,
+				B7F3389A2977097200E3A267 /* Model */,
+				B7F338992977096C00E3A267 /* Extensions */,
+				B7F3388A2976F97500E3A267 /* Assets */,
+				B7F338882976F95500E3A267 /* App */,
+				B7F338892976F95D00E3A267 /* UI */,
+			);
+			path = "Daily App";
+			sourceTree = "<group>";
+		};
+		B7F338882976F95500E3A267 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				B7F338712976F94800E3A267 /* AppDelegate.swift */,
 				B7F338732976F94800E3A267 /* SceneDelegate.swift */,
-				B7F338752976F94800E3A267 /* ViewController.swift */,
-				B7F338772976F94800E3A267 /* Main.storyboard */,
-				B7F3387D2976F94900E3A267 /* Assets.xcassets */,
-				B7F3387F2976F94900E3A267 /* LaunchScreen.storyboard */,
 				B7F338822976F94900E3A267 /* Info.plist */,
 				B7F3387A2976F94800E3A267 /* Daily_App.xcdatamodeld */,
 			);
-			path = "Daily App";
+			path = App;
+			sourceTree = "<group>";
+		};
+		B7F338892976F95D00E3A267 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B7DBC15E2979B075005BA773 /* DeatilsVC */,
+				B7F338A029770FF700E3A267 /* CreateDaily */,
+				B7F3388B2976F9A800E3A267 /* Home */,
+				B7F3387F2976F94900E3A267 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B7F3388A2976F97500E3A267 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B7F3387D2976F94900E3A267 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B7F3388B2976F9A800E3A267 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B7F3388C2976F9CD00E3A267 /* HomeVC.swift */,
+				B7F3388D2976F9CD00E3A267 /* HomeVC.xib */,
+				B7F338922976FBA000E3A267 /* HomeVM.swift */,
+				B7F338942976FC8F00E3A267 /* Cell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B7F338942976FC8F00E3A267 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B7F338952976FCA000E3A267 /* HomeCell.swift */,
+				B7F338972976FCA800E3A267 /* HomeCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B7F338992977096C00E3A267 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B734C8332979670D000B2AC3 /* UIViewController + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B7F3389A2977097200E3A267 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7F3389E29770AD100E3A267 /* DailyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7F3389B2977097700E3A267 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B7F3389C29770AC000E3A267 /* CoreData Manager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B7F338A029770FF700E3A267 /* CreateDaily */ = {
+			isa = PBXGroup;
+			children = (
+				B7F338A5297710D300E3A267 /* Cell */,
+				B7F338A12977100C00E3A267 /* CreateDailyVC.swift */,
+				B7F338A22977100C00E3A267 /* CreateDailyVC.xib */,
+				B734C83129796590000B2AC3 /* CreateDailyVM.swift */,
+			);
+			path = CreateDaily;
+			sourceTree = "<group>";
+		};
+		B7F338A5297710D300E3A267 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B7F338A62977114A00E3A267 /* CreateCell.swift */,
+				B7F338A82977115100E3A267 /* CreateCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +215,9 @@
 			dependencies = (
 			);
 			name = "Daily App";
+			packageProductDependencies = (
+				B734C836297971A2000B2AC3 /* UIScrollView_InfiniteScroll */,
+			);
 			productName = "Daily App";
 			productReference = B7F3386E2976F94800E3A267 /* Daily App.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +246,9 @@
 				Base,
 			);
 			mainGroup = B7F338652976F94800E3A267;
+			packageReferences = (
+				B734C835297971A2000B2AC3 /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */,
+			);
 			productRefGroup = B7F3386F2976F94800E3A267 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,9 +263,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DBC1622979B089005BA773 /* DetailsVC.xib in Resources */,
 				B7F338812976F94900E3A267 /* LaunchScreen.storyboard in Resources */,
+				B7F338A92977115100E3A267 /* CreateCell.xib in Resources */,
+				B7F3388F2976F9CD00E3A267 /* HomeVC.xib in Resources */,
+				B7F338A42977100C00E3A267 /* CreateDailyVC.xib in Resources */,
+				B7F338982976FCA800E3A267 /* HomeCell.xib in Resources */,
 				B7F3387E2976F94900E3A267 /* Assets.xcassets in Resources */,
-				B7F338792976F94800E3A267 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +280,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7F338762976F94800E3A267 /* ViewController.swift in Sources */,
 				B7F3387C2976F94800E3A267 /* Daily_App.xcdatamodeld in Sources */,
+				B7F338932976FBA000E3A267 /* HomeVM.swift in Sources */,
+				B7F3388E2976F9CD00E3A267 /* HomeVC.swift in Sources */,
 				B7F338722976F94800E3A267 /* AppDelegate.swift in Sources */,
+				B734C83229796590000B2AC3 /* CreateDailyVM.swift in Sources */,
+				B7F3389D29770AC000E3A267 /* CoreData Manager.swift in Sources */,
+				B7F338A72977114A00E3A267 /* CreateCell.swift in Sources */,
+				B7F338962976FCA000E3A267 /* HomeCell.swift in Sources */,
 				B7F338742976F94800E3A267 /* SceneDelegate.swift in Sources */,
+				B7F338A32977100C00E3A267 /* CreateDailyVC.swift in Sources */,
+				B734C8342979670D000B2AC3 /* UIViewController + Extensions.swift in Sources */,
+				B7DBC1612979B089005BA773 /* DetailsVC.swift in Sources */,
+				B7F3389F29770AD100E3A267 /* DailyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B7F338772976F94800E3A267 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B7F338782976F94800E3A267 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B7F3387F2976F94900E3A267 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,10 +433,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L24C9CN3G6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Daily App/Info.plist";
+				INFOPLIST_FILE = "Daily App/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,10 +460,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L24C9CN3G6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Daily App/Info.plist";
+				INFOPLIST_FILE = "Daily App/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,6 +500,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B734C835297971A2000B2AC3 /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pronebird/UIScrollView-InfiniteScroll";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B734C836297971A2000B2AC3 /* UIScrollView_InfiniteScroll */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B734C835297971A2000B2AC3 /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */;
+			productName = UIScrollView_InfiniteScroll;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B7F3387A2976F94800E3A267 /* Daily_App.xcdatamodeld */ = {
